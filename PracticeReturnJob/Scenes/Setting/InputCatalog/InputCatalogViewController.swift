@@ -18,7 +18,7 @@ final class InputCatalogViewController: UIViewController {
     
     // MARK: - Property
     
-    var delegate: InputCatalogDelegate?
+    weak var delegate: InputCatalogDelegate?
     private let catType = CatType.allCases
     private var disposeBag = DisposeBag()
     

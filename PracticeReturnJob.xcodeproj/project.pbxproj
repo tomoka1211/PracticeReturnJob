@@ -28,7 +28,6 @@
 		63D7730E28E999A2003CF91A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7730D28E999A2003CF91A /* HomeViewController.swift */; };
 		63D7731228E99A53003CF91A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D7731128E99A53003CF91A /* Home.storyboard */; };
 		63D7731428E9A063003CF91A /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7731328E9A063003CF91A /* HomeNavigationViewController.swift */; };
-		63D7731628E9A168003CF91A /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7731528E9A168003CF91A /* StoryboardInstantiatable.swift */; };
 		63D7731828E9A1C6003CF91A /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7731728E9A1C6003CF91A /* NSObject+.swift */; };
 		63D7731A28E9A562003CF91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D7731928E9A562003CF91A /* Assets.xcassets */; };
 		63D7731E28E9AC63003CF91A /* SettingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7731D28E9AC63003CF91A /* SettingNavigationViewController.swift */; };
@@ -37,6 +36,11 @@
 		63D7732428E9AF7B003CF91A /* SettingViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7732328E9AF7B003CF91A /* SettingViewSection.swift */; };
 		63D7732628E9B297003CF91A /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7732528E9B297003CF91A /* SettingTableViewCell.swift */; };
 		63D7732828E9B6A3003CF91A /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7732728E9B6A3003CF91A /* UITableView+.swift */; };
+		63FADA3C290FD5F300B3854C /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA3B290FD5F300B3854C /* StoryboardInstantiable.swift */; };
+		63FADA41290FD98700B3854C /* ImagePreviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA3D290FD98700B3854C /* ImagePreviewCoordinator.swift */; };
+		63FADA42290FD98700B3854C /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA3E290FD98700B3854C /* ImagePreviewViewController.swift */; };
+		63FADA43290FD98700B3854C /* ImagePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA3F290FD98700B3854C /* ImagePreviewViewModel.swift */; };
+		63FADA44290FD98700B3854C /* ImagePreview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FADA40290FD98700B3854C /* ImagePreview.storyboard */; };
 		A721F2B88E85052F9754BEBB /* Pods_PracticeReturnJob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95604ECB090B00F0BBABAB9 /* Pods_PracticeReturnJob.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +69,6 @@
 		63D7730D28E999A2003CF91A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		63D7731128E99A53003CF91A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		63D7731328E9A063003CF91A /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
-		63D7731528E9A168003CF91A /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
 		63D7731728E9A1C6003CF91A /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		63D7731928E9A562003CF91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D7731D28E9AC63003CF91A /* SettingNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNavigationViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +77,11 @@
 		63D7732328E9AF7B003CF91A /* SettingViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewSection.swift; sourceTree = "<group>"; };
 		63D7732528E9B297003CF91A /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		63D7732728E9B6A3003CF91A /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		63FADA3B290FD5F300B3854C /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		63FADA3D290FD98700B3854C /* ImagePreviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewCoordinator.swift; sourceTree = "<group>"; };
+		63FADA3E290FD98700B3854C /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		63FADA3F290FD98700B3854C /* ImagePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewModel.swift; sourceTree = "<group>"; };
+		63FADA40290FD98700B3854C /* ImagePreview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePreview.storyboard; sourceTree = "<group>"; };
 		916503352B2E92D96931F7E5 /* Pods-PracticeReturnJob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeReturnJob.debug.xcconfig"; path = "Target Support Files/Pods-PracticeReturnJob/Pods-PracticeReturnJob.debug.xcconfig"; sourceTree = "<group>"; };
 		C95604ECB090B00F0BBABAB9 /* Pods_PracticeReturnJob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeReturnJob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,6 +104,17 @@
 				C95604ECB090B00F0BBABAB9 /* Pods_PracticeReturnJob.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63AD6788290FBFAB00FDC63F /* ImagePreview */ = {
+			isa = PBXGroup;
+			children = (
+				63FADA3D290FD98700B3854C /* ImagePreviewCoordinator.swift */,
+				63FADA3E290FD98700B3854C /* ImagePreviewViewController.swift */,
+				63FADA3F290FD98700B3854C /* ImagePreviewViewModel.swift */,
+				63FADA40290FD98700B3854C /* ImagePreview.storyboard */,
+			);
+			path = ImagePreview;
 			sourceTree = "<group>";
 		};
 		63CCF3CA28FE654100E59028 /* InputCatalog */ = {
@@ -208,13 +227,13 @@
 			isa = PBXGroup;
 			children = (
 				63CCF3E728FE8E2600E59028 /* Rx */,
-				63D7731528E9A168003CF91A /* StoryboardInstantiatable.swift */,
 				63D7731728E9A1C6003CF91A /* NSObject+.swift */,
 				63D7732728E9B6A3003CF91A /* UITableView+.swift */,
 				63CCF3D128FE745300E59028 /* Storyboard+.swift */,
 				63CCF3D328FE754700E59028 /* StoryboardIdentifiable.swift */,
 				63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */,
 				63CCF3DB28FE7DDC00E59028 /* UIView+.swift */,
+				63FADA3B290FD5F300B3854C /* StoryboardInstantiable.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -232,6 +251,7 @@
 		63D7731B28E9AC3A003CF91A /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				63AD6788290FBFAB00FDC63F /* ImagePreview */,
 				63CCF3CA28FE654100E59028 /* InputCatalog */,
 				63D7731D28E9AC63003CF91A /* SettingNavigationViewController.swift */,
 				63D7731F28E9AC7B003CF91A /* Setting.storyboard */,
@@ -314,6 +334,7 @@
 				63D772FC28E9725B003CF91A /* LaunchScreen.storyboard in Resources */,
 				63D772F728E97259003CF91A /* Main.storyboard in Resources */,
 				63D7732028E9AC7B003CF91A /* Setting.storyboard in Resources */,
+				63FADA44290FD98700B3854C /* ImagePreview.storyboard in Resources */,
 				63CCF3E628FE896E00E59028 /* PickerView.xib in Resources */,
 				63CCF3CE28FE658C00E59028 /* InputCatalog.storyboard in Resources */,
 				63D7731A28E9A562003CF91A /* Assets.xcassets in Resources */,
@@ -371,16 +392,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D7732628E9B297003CF91A /* SettingTableViewCell.swift in Sources */,
+				63FADA41290FD98700B3854C /* ImagePreviewCoordinator.swift in Sources */,
 				63D772F428E97259003CF91A /* ViewController.swift in Sources */,
 				63D772F028E97259003CF91A /* AppDelegate.swift in Sources */,
 				63CCF3D028FE6CAD00E59028 /* InputCatalogCoordinator.swift in Sources */,
 				63D7731428E9A063003CF91A /* HomeNavigationViewController.swift in Sources */,
-				63D7731628E9A168003CF91A /* StoryboardInstantiatable.swift in Sources */,
 				63CCF3DF28FE806B00E59028 /* CatType.swift in Sources */,
 				63CCF3CC28FE658100E59028 /* InputCatalogViewController.swift in Sources */,
 				63D7731828E9A1C6003CF91A /* NSObject+.swift in Sources */,
 				63CCF3D228FE745300E59028 /* Storyboard+.swift in Sources */,
 				63CCF3E128FE84E400E59028 /* IBDesignableView.swift in Sources */,
+				63FADA3C290FD5F300B3854C /* StoryboardInstantiable.swift in Sources */,
 				63CCF3D428FE754700E59028 /* StoryboardIdentifiable.swift in Sources */,
 				63D7732428E9AF7B003CF91A /* SettingViewSection.swift in Sources */,
 				63CCF3E928FE8E3400E59028 /* UIView+Rx.swift in Sources */,
@@ -388,9 +410,11 @@
 				63D7731E28E9AC63003CF91A /* SettingNavigationViewController.swift in Sources */,
 				63D7732828E9B6A3003CF91A /* UITableView+.swift in Sources */,
 				63CCF3E428FE895300E59028 /* PickerView.swift in Sources */,
+				63FADA42290FD98700B3854C /* ImagePreviewViewController.swift in Sources */,
 				63D772F228E97259003CF91A /* SceneDelegate.swift in Sources */,
 				63CCF3DC28FE7DDC00E59028 /* UIView+.swift in Sources */,
 				63D7730E28E999A2003CF91A /* HomeViewController.swift in Sources */,
+				63FADA43290FD98700B3854C /* ImagePreviewViewModel.swift in Sources */,
 				63CCF3DA28FE7D1F00E59028 /* PickerLabel.swift in Sources */,
 				63CCF3D628FE78CA00E59028 /* UITableView+Rx.swift in Sources */,
 			);

@@ -10,7 +10,7 @@ import RxSwift
 import RxDataSources
 import UIKit
 
-final class SettingViewController: UIViewController {
+final class SettingViewController: UIViewController, StoryboardInstantiable {
     
     typealias DataSource = RxTableViewSectionedReloadDataSource<SettingViewSection>
     
@@ -29,6 +29,13 @@ final class SettingViewController: UIViewController {
         })
     }()
     
+    // MARK: - Public
+    
+    static func configureWith() -> SettingViewController {
+        let vc = SettingViewController.instantiate()
+        return vc
+    }
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -42,8 +49,11 @@ final class SettingViewController: UIViewController {
         tableView.rx.itemSelected(dataSource: dataSource)
             .subscribe(onNext: { [unowned self] transition in
                 switch transition {
-                case .contact:
+                case .inputCatalog:
                     let coordinator = InputCatalogCoordinator(parent: self)
+                    coordinator.start()
+                case .imagePreview:
+                    let coordinator = ImagePreviewCoordinator(parent: self)
                     coordinator.start()
                 default:
                     print("遷移作ってね！")
@@ -53,7 +63,3 @@ final class SettingViewController: UIViewController {
     }
 
 }
-
-// MARK: - StoryboardInstantiatable
-
-extension SettingViewController: StoryboardInstantiatable {}

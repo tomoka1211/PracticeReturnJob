@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController, StoryboardInstantiable {
     typealias DataSourceType = UICollectionViewDiffableDataSource<Int, String>
 
     // MARK: - IBOutlet
@@ -17,6 +17,13 @@ final class HomeViewController: UIViewController {
     // MARK: - Property
     
     private var dataSource: DataSourceType!
+    
+    // MARK: - Public
+    
+    static func configureWith() -> HomeViewController {
+        let vc = HomeViewController.instantiate()
+        return vc
+    }
     
     // MARK: - Lifecycle
     
@@ -65,7 +72,3 @@ final class HomeViewController: UIViewController {
     }
 
 }
-
-// MARK: - StoryboardInstantiatable
-
-extension HomeViewController: StoryboardInstantiatable {}

@@ -13,7 +13,7 @@ class SettingNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewController = SettingViewController(with: ())
+        let viewController = SettingViewController.configureWith()
         setViewControllers([viewController], animated: false)
     }
 }

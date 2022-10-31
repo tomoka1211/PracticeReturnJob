@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol InputCatalogDelegate {
+protocol InputCatalogDelegate: AnyObject {
     func dismiss()
     func complete()
 }
@@ -39,7 +39,7 @@ final class InputCatalogCoordinator: InputCatalogDelegate {
     }
     
     func dismiss() {
-        print("dismiss")
+        selfNavigator.dismiss(animated: true)
     }
     
     func complete() {

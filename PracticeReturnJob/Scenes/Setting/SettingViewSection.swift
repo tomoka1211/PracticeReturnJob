@@ -14,8 +14,8 @@ enum SettingViewSection {
     case other([Item])
 
     enum Item {
-        case usefulColumn
-        case faq
+        case inputCatalog
+        case imagePreview
         case contact
         case terms
         case privacy
@@ -48,8 +48,8 @@ extension SettingViewSection: SectionModelType {
 extension SettingViewSection {
     static let defaultSettings: [SettingViewSection] = [
         .setting([
-            Item.usefulColumn,
-            Item.faq
+            Item.inputCatalog,
+            Item.imagePreview
         ]),
         .other([
             Item.contact,
@@ -63,8 +63,8 @@ extension SettingViewSection {
 extension SettingViewSection.Item {
     var title: String {
         switch self {
-        case .usefulColumn: return "お役立ち情報"
-        case .faq: return "よくある質問"
+        case .inputCatalog: return "入力フォームカタログ"
+        case .imagePreview: return "画像プレビュー"
         case .contact: return "お問合せ"
         case .terms: return "利用規約"
         case .privacy: return "プライバシーポリシー"
@@ -99,25 +99,6 @@ extension SettingViewSection.Item {
             return .disclosureIndicator
         }
     }
-
-//    var navigation: NavigationType? {
-//        switch self {
-//        case .usefulColumn:
-//            return .push(ArticleViewController(with: ()))
-//        case .faq:
-//            return .push(FaqViewController(with: ()))
-//        case .contact:
-//            return .present(ContactUsViewController(with: ()))
-//        case .terms:
-//            return .present(SFSafariViewController(url: URL(string: Const.termsUrl)!))
-//        case .privacy:
-//            return .present(SFSafariViewController(url: URL(string: Const.privacyUrl)!))
-//        case .deleteUser:
-//            return .push(DeleteAccountViewController(with: ()))
-//        default:
-//            return nil
-//        }
-//    }
 }
 
 // MARK: - Equatable
