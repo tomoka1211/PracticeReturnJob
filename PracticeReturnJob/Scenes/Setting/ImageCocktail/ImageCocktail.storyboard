@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Image Cocktail View Controller-->
+        <!-- ImageCocktail Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="ImageCocktailViewController" id="Y6W-OH-hqX" customClass="ImageCocktailViewController" customModule="PracticeReturnJob" customModuleProvider="target" sceneMemberID="viewController">
