@@ -53,7 +53,7 @@ final class SettingViewController: UIViewController, StoryboardInstantiable {
                     let coordinator = InputCatalogCoordinator(parent: self)
                     coordinator.start()
                 case .imagePreview:
-                    let coordinator = ImagePreviewCoordinator(parent: self)
+                    let coordinator = ImageCocktailCoordinator(parent: self)
                     coordinator.start()
                 default:
                     print("遷移作ってね！")
