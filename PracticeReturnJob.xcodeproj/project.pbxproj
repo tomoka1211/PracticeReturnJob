@@ -39,6 +39,10 @@
 		63FADA42290FD98700B3854C /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA3E290FD98700B3854C /* ImagePreviewViewController.swift */; };
 		63FADA43290FD98700B3854C /* ImagePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA3F290FD98700B3854C /* ImagePreviewViewModel.swift */; };
 		63FADA44290FD98700B3854C /* ImagePreview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FADA40290FD98700B3854C /* ImagePreview.storyboard */; };
+		63FADA4E290FE3CF00B3854C /* ImageCocktailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA4A290FE3CF00B3854C /* ImageCocktailCoordinator.swift */; };
+		63FADA4F290FE3CF00B3854C /* ImageCocktailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA4B290FE3CF00B3854C /* ImageCocktailViewController.swift */; };
+		63FADA50290FE3CF00B3854C /* ImageCocktailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FADA4C290FE3CF00B3854C /* ImageCocktailViewModel.swift */; };
+		63FADA53290FE40000B3854C /* ImageCocktail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FADA52290FE40000B3854C /* ImageCocktail.storyboard */; };
 		A721F2B88E85052F9754BEBB /* Pods_PracticeReturnJob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95604ECB090B00F0BBABAB9 /* Pods_PracticeReturnJob.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +82,10 @@
 		63FADA3E290FD98700B3854C /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
 		63FADA3F290FD98700B3854C /* ImagePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewModel.swift; sourceTree = "<group>"; };
 		63FADA40290FD98700B3854C /* ImagePreview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePreview.storyboard; sourceTree = "<group>"; };
+		63FADA4A290FE3CF00B3854C /* ImageCocktailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCocktailCoordinator.swift; sourceTree = "<group>"; };
+		63FADA4B290FE3CF00B3854C /* ImageCocktailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCocktailViewController.swift; sourceTree = "<group>"; };
+		63FADA4C290FE3CF00B3854C /* ImageCocktailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCocktailViewModel.swift; sourceTree = "<group>"; };
+		63FADA52290FE40000B3854C /* ImageCocktail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageCocktail.storyboard; sourceTree = "<group>"; };
 		916503352B2E92D96931F7E5 /* Pods-PracticeReturnJob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeReturnJob.debug.xcconfig"; path = "Target Support Files/Pods-PracticeReturnJob/Pods-PracticeReturnJob.debug.xcconfig"; sourceTree = "<group>"; };
 		C95604ECB090B00F0BBABAB9 /* Pods_PracticeReturnJob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeReturnJob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -245,6 +253,7 @@
 		63D7731B28E9AC3A003CF91A /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				63FADA49290FE35B00B3854C /* ImageCocktail */,
 				63FADA46290FDCB700B3854C /* Setting */,
 				63AD6788290FBFAB00FDC63F /* ImagePreview */,
 				63CCF3CA28FE654100E59028 /* InputCatalog */,
@@ -286,6 +295,17 @@
 				63D772FA28E9725B003CF91A /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		63FADA49290FE35B00B3854C /* ImageCocktail */ = {
+			isa = PBXGroup;
+			children = (
+				63FADA4A290FE3CF00B3854C /* ImageCocktailCoordinator.swift */,
+				63FADA4B290FE3CF00B3854C /* ImageCocktailViewController.swift */,
+				63FADA4C290FE3CF00B3854C /* ImageCocktailViewModel.swift */,
+				63FADA52290FE40000B3854C /* ImageCocktail.storyboard */,
+			);
+			path = ImageCocktail;
 			sourceTree = "<group>";
 		};
 		98504277736BF0EB1DADE298 /* Pods */ = {
@@ -365,6 +385,7 @@
 				63CCF3CE28FE658C00E59028 /* InputCatalog.storyboard in Resources */,
 				63D7731A28E9A562003CF91A /* Assets.xcassets in Resources */,
 				63D7731228E99A53003CF91A /* Home.storyboard in Resources */,
+				63FADA53290FE40000B3854C /* ImageCocktail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,14 +439,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D7732628E9B297003CF91A /* SettingTableViewCell.swift in Sources */,
+				63FADA50290FE3CF00B3854C /* ImageCocktailViewModel.swift in Sources */,
 				63FADA41290FD98700B3854C /* ImagePreviewCoordinator.swift in Sources */,
 				63D772F028E97259003CF91A /* AppDelegate.swift in Sources */,
 				63CCF3D028FE6CAD00E59028 /* InputCatalogCoordinator.swift in Sources */,
 				63D7731428E9A063003CF91A /* HomeNavigationViewController.swift in Sources */,
+				63FADA4E290FE3CF00B3854C /* ImageCocktailCoordinator.swift in Sources */,
 				63CCF3DF28FE806B00E59028 /* CatType.swift in Sources */,
 				63CCF3CC28FE658100E59028 /* InputCatalogViewController.swift in Sources */,
 				63D7731828E9A1C6003CF91A /* NSObject+.swift in Sources */,
 				63CCF3E128FE84E400E59028 /* IBDesignableView.swift in Sources */,
+				63FADA4F290FE3CF00B3854C /* ImageCocktailViewController.swift in Sources */,
 				63FADA3C290FD5F300B3854C /* StoryboardInstantiable.swift in Sources */,
 				63CCF3D428FE754700E59028 /* StoryboardIdentifiable.swift in Sources */,
 				63D7732428E9AF7B003CF91A /* SettingViewSection.swift in Sources */,
