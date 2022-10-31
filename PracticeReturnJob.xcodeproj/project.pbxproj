@@ -7,23 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63CCF3CC28FE658100E59028 /* InputCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3CB28FE658100E59028 /* InputCatalogViewController.swift */; };
+		63CCF3CE28FE658C00E59028 /* InputCatalog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CCF3CD28FE658C00E59028 /* InputCatalog.storyboard */; };
+		63CCF3D028FE6CAD00E59028 /* InputCatalogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3CF28FE6CAD00E59028 /* InputCatalogCoordinator.swift */; };
+		63CCF3D228FE745300E59028 /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3D128FE745300E59028 /* Storyboard+.swift */; };
+		63CCF3D428FE754700E59028 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3D328FE754700E59028 /* StoryboardIdentifiable.swift */; };
+		63CCF3D628FE78CA00E59028 /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */; };
+		63CCF3DA28FE7D1F00E59028 /* PickerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3D928FE7D1F00E59028 /* PickerLabel.swift */; };
+		63CCF3DC28FE7DDC00E59028 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3DB28FE7DDC00E59028 /* UIView+.swift */; };
+		63CCF3DF28FE806B00E59028 /* CatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3DE28FE806B00E59028 /* CatType.swift */; };
+		63CCF3E128FE84E400E59028 /* IBDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3E028FE84E400E59028 /* IBDesignableView.swift */; };
+		63CCF3E428FE895300E59028 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3E328FE895300E59028 /* PickerView.swift */; };
+		63CCF3E628FE896E00E59028 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CCF3E528FE896E00E59028 /* PickerView.xib */; };
+		63CCF3E928FE8E3400E59028 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3E828FE8E3400E59028 /* UIView+Rx.swift */; };
 		63D772F028E97259003CF91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D772EF28E97259003CF91A /* AppDelegate.swift */; };
 		63D772F228E97259003CF91A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D772F128E97259003CF91A /* SceneDelegate.swift */; };
 		63D772F428E97259003CF91A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D772F328E97259003CF91A /* ViewController.swift */; };
 		63D772F728E97259003CF91A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D772F528E97259003CF91A /* Main.storyboard */; };
-		63D772F928E9725B003CF91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D772F828E9725B003CF91A /* Assets.xcassets */; };
 		63D772FC28E9725B003CF91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D772FA28E9725B003CF91A /* LaunchScreen.storyboard */; };
+		63D7730E28E999A2003CF91A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7730D28E999A2003CF91A /* HomeViewController.swift */; };
+		63D7731228E99A53003CF91A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D7731128E99A53003CF91A /* Home.storyboard */; };
+		63D7731428E9A063003CF91A /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7731328E9A063003CF91A /* HomeNavigationViewController.swift */; };
+		63D7731628E9A168003CF91A /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7731528E9A168003CF91A /* StoryboardInstantiatable.swift */; };
+		63D7731828E9A1C6003CF91A /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7731728E9A1C6003CF91A /* NSObject+.swift */; };
+		63D7731A28E9A562003CF91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D7731928E9A562003CF91A /* Assets.xcassets */; };
+		63D7731E28E9AC63003CF91A /* SettingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7731D28E9AC63003CF91A /* SettingNavigationViewController.swift */; };
+		63D7732028E9AC7B003CF91A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D7731F28E9AC7B003CF91A /* Setting.storyboard */; };
+		63D7732228E9AC91003CF91A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7732128E9AC91003CF91A /* SettingViewController.swift */; };
+		63D7732428E9AF7B003CF91A /* SettingViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7732328E9AF7B003CF91A /* SettingViewSection.swift */; };
+		63D7732628E9B297003CF91A /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7732528E9B297003CF91A /* SettingTableViewCell.swift */; };
+		63D7732828E9B6A3003CF91A /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7732728E9B6A3003CF91A /* UITableView+.swift */; };
+		A721F2B88E85052F9754BEBB /* Pods_PracticeReturnJob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95604ECB090B00F0BBABAB9 /* Pods_PracticeReturnJob.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D80883DC4F2022371851E34 /* Pods-PracticeReturnJob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeReturnJob.release.xcconfig"; path = "Target Support Files/Pods-PracticeReturnJob/Pods-PracticeReturnJob.release.xcconfig"; sourceTree = "<group>"; };
+		63CCF3CB28FE658100E59028 /* InputCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCatalogViewController.swift; sourceTree = "<group>"; };
+		63CCF3CD28FE658C00E59028 /* InputCatalog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputCatalog.storyboard; sourceTree = "<group>"; };
+		63CCF3CF28FE6CAD00E59028 /* InputCatalogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCatalogCoordinator.swift; sourceTree = "<group>"; };
+		63CCF3D128FE745300E59028 /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
+		63CCF3D328FE754700E59028 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Rx.swift"; sourceTree = "<group>"; };
+		63CCF3D928FE7D1F00E59028 /* PickerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PickerLabel.swift; path = ../../../../../../Desktop/PickerLabel.swift; sourceTree = "<group>"; };
+		63CCF3DB28FE7DDC00E59028 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		63CCF3DE28FE806B00E59028 /* CatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatType.swift; sourceTree = "<group>"; };
+		63CCF3E028FE84E400E59028 /* IBDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableView.swift; sourceTree = "<group>"; };
+		63CCF3E328FE895300E59028 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		63CCF3E528FE896E00E59028 /* PickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
+		63CCF3E828FE8E3400E59028 /* UIView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rx.swift"; sourceTree = "<group>"; };
 		63D772EC28E97259003CF91A /* PracticeReturnJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeReturnJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D772EF28E97259003CF91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D772F128E97259003CF91A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		63D772F328E97259003CF91A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63D772F628E97259003CF91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		63D772F828E9725B003CF91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D772FB28E9725B003CF91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D772FD28E9725B003CF91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D7730D28E999A2003CF91A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		63D7731128E99A53003CF91A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		63D7731328E9A063003CF91A /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
+		63D7731528E9A168003CF91A /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		63D7731728E9A1C6003CF91A /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		63D7731928E9A562003CF91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63D7731D28E9AC63003CF91A /* SettingNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNavigationViewController.swift; sourceTree = "<group>"; };
+		63D7731F28E9AC7B003CF91A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		63D7732128E9AC91003CF91A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		63D7732328E9AF7B003CF91A /* SettingViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewSection.swift; sourceTree = "<group>"; };
+		63D7732528E9B297003CF91A /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		63D7732728E9B6A3003CF91A /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		916503352B2E92D96931F7E5 /* Pods-PracticeReturnJob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeReturnJob.debug.xcconfig"; path = "Target Support Files/Pods-PracticeReturnJob/Pods-PracticeReturnJob.debug.xcconfig"; sourceTree = "<group>"; };
+		C95604ECB090B00F0BBABAB9 /* Pods_PracticeReturnJob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeReturnJob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +83,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A721F2B88E85052F9754BEBB /* Pods_PracticeReturnJob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5726989A57B7528A48B95CD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C95604ECB090B00F0BBABAB9 /* Pods_PracticeReturnJob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63CCF3CA28FE654100E59028 /* InputCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				63CCF3CB28FE658100E59028 /* InputCatalogViewController.swift */,
+				63CCF3CD28FE658C00E59028 /* InputCatalog.storyboard */,
+				63CCF3CF28FE6CAD00E59028 /* InputCatalogCoordinator.swift */,
+			);
+			path = InputCatalog;
+			sourceTree = "<group>";
+		};
+		63CCF3D728FE7CF300E59028 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				63CCF3E228FE893000E59028 /* PickerView */,
+				63CCF3D828FE7D0200E59028 /* PickerLabel */,
+				63CCF3E028FE84E400E59028 /* IBDesignableView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		63CCF3D828FE7D0200E59028 /* PickerLabel */ = {
+			isa = PBXGroup;
+			children = (
+				63CCF3D928FE7D1F00E59028 /* PickerLabel.swift */,
+			);
+			path = PickerLabel;
+			sourceTree = "<group>";
+		};
+		63CCF3DD28FE805800E59028 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63CCF3DE28FE806B00E59028 /* CatType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63CCF3E228FE893000E59028 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				63CCF3E328FE895300E59028 /* PickerView.swift */,
+				63CCF3E528FE896E00E59028 /* PickerView.xib */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		63CCF3E728FE8E2600E59028 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				63CCF3E828FE8E3400E59028 /* UIView+Rx.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
 		63D772E328E97259003CF91A = {
 			isa = PBXGroup;
 			children = (
 				63D772EE28E97259003CF91A /* PracticeReturnJob */,
 				63D772ED28E97259003CF91A /* Products */,
+				98504277736BF0EB1DADE298 /* Pods */,
+				5726989A57B7528A48B95CD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +172,83 @@
 		63D772EE28E97259003CF91A /* PracticeReturnJob */ = {
 			isa = PBXGroup;
 			children = (
+				63D7730428E975CE003CF91A /* Assets */,
+				63CCF3D728FE7CF300E59028 /* Component */,
+				63D7730328E97311003CF91A /* Scenes */,
+				63D7730528E975E1003CF91A /* Utility */,
+				63CCF3DD28FE805800E59028 /* Model */,
 				63D772EF28E97259003CF91A /* AppDelegate.swift */,
 				63D772F128E97259003CF91A /* SceneDelegate.swift */,
 				63D772F328E97259003CF91A /* ViewController.swift */,
-				63D772F528E97259003CF91A /* Main.storyboard */,
-				63D772F828E9725B003CF91A /* Assets.xcassets */,
 				63D772FA28E9725B003CF91A /* LaunchScreen.storyboard */,
 				63D772FD28E9725B003CF91A /* Info.plist */,
 			);
 			path = PracticeReturnJob;
+			sourceTree = "<group>";
+		};
+		63D7730328E97311003CF91A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				63D7731B28E9AC3A003CF91A /* Setting */,
+				63D7730628E9966E003CF91A /* Home */,
+				63D772F528E97259003CF91A /* Main.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		63D7730428E975CE003CF91A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				63D7731928E9A562003CF91A /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		63D7730528E975E1003CF91A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				63CCF3E728FE8E2600E59028 /* Rx */,
+				63D7731528E9A168003CF91A /* StoryboardInstantiatable.swift */,
+				63D7731728E9A1C6003CF91A /* NSObject+.swift */,
+				63D7732728E9B6A3003CF91A /* UITableView+.swift */,
+				63CCF3D128FE745300E59028 /* Storyboard+.swift */,
+				63CCF3D328FE754700E59028 /* StoryboardIdentifiable.swift */,
+				63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */,
+				63CCF3DB28FE7DDC00E59028 /* UIView+.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		63D7730628E9966E003CF91A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				63D7730D28E999A2003CF91A /* HomeViewController.swift */,
+				63D7731128E99A53003CF91A /* Home.storyboard */,
+				63D7731328E9A063003CF91A /* HomeNavigationViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		63D7731B28E9AC3A003CF91A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				63CCF3CA28FE654100E59028 /* InputCatalog */,
+				63D7731D28E9AC63003CF91A /* SettingNavigationViewController.swift */,
+				63D7731F28E9AC7B003CF91A /* Setting.storyboard */,
+				63D7732128E9AC91003CF91A /* SettingViewController.swift */,
+				63D7732328E9AF7B003CF91A /* SettingViewSection.swift */,
+				63D7732528E9B297003CF91A /* SettingTableViewCell.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		98504277736BF0EB1DADE298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				916503352B2E92D96931F7E5 /* Pods-PracticeReturnJob.debug.xcconfig */,
+				2D80883DC4F2022371851E34 /* Pods-PracticeReturnJob.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63D7730028E9725B003CF91A /* Build configuration list for PBXNativeTarget "PracticeReturnJob" */;
 			buildPhases = (
+				913FFD316402E7C6500EB1EF /* [CP] Check Pods Manifest.lock */,
 				63D772E828E97259003CF91A /* Sources */,
 				63D772E928E97259003CF91A /* Frameworks */,
 				63D772EA28E97259003CF91A /* Resources */,
+				1E2D4CA77554C3D70D9B07F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,21 +312,87 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D772FC28E9725B003CF91A /* LaunchScreen.storyboard in Resources */,
-				63D772F928E9725B003CF91A /* Assets.xcassets in Resources */,
 				63D772F728E97259003CF91A /* Main.storyboard in Resources */,
+				63D7732028E9AC7B003CF91A /* Setting.storyboard in Resources */,
+				63CCF3E628FE896E00E59028 /* PickerView.xib in Resources */,
+				63CCF3CE28FE658C00E59028 /* InputCatalog.storyboard in Resources */,
+				63D7731A28E9A562003CF91A /* Assets.xcassets in Resources */,
+				63D7731228E99A53003CF91A /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E2D4CA77554C3D70D9B07F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PracticeReturnJob/Pods-PracticeReturnJob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PracticeReturnJob/Pods-PracticeReturnJob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PracticeReturnJob/Pods-PracticeReturnJob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		913FFD316402E7C6500EB1EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PracticeReturnJob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63D772E828E97259003CF91A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D7732628E9B297003CF91A /* SettingTableViewCell.swift in Sources */,
 				63D772F428E97259003CF91A /* ViewController.swift in Sources */,
 				63D772F028E97259003CF91A /* AppDelegate.swift in Sources */,
+				63CCF3D028FE6CAD00E59028 /* InputCatalogCoordinator.swift in Sources */,
+				63D7731428E9A063003CF91A /* HomeNavigationViewController.swift in Sources */,
+				63D7731628E9A168003CF91A /* StoryboardInstantiatable.swift in Sources */,
+				63CCF3DF28FE806B00E59028 /* CatType.swift in Sources */,
+				63CCF3CC28FE658100E59028 /* InputCatalogViewController.swift in Sources */,
+				63D7731828E9A1C6003CF91A /* NSObject+.swift in Sources */,
+				63CCF3D228FE745300E59028 /* Storyboard+.swift in Sources */,
+				63CCF3E128FE84E400E59028 /* IBDesignableView.swift in Sources */,
+				63CCF3D428FE754700E59028 /* StoryboardIdentifiable.swift in Sources */,
+				63D7732428E9AF7B003CF91A /* SettingViewSection.swift in Sources */,
+				63CCF3E928FE8E3400E59028 /* UIView+Rx.swift in Sources */,
+				63D7732228E9AC91003CF91A /* SettingViewController.swift in Sources */,
+				63D7731E28E9AC63003CF91A /* SettingNavigationViewController.swift in Sources */,
+				63D7732828E9B6A3003CF91A /* UITableView+.swift in Sources */,
+				63CCF3E428FE895300E59028 /* PickerView.swift in Sources */,
 				63D772F228E97259003CF91A /* SceneDelegate.swift in Sources */,
+				63CCF3DC28FE7DDC00E59028 /* UIView+.swift in Sources */,
+				63D7730E28E999A2003CF91A /* HomeViewController.swift in Sources */,
+				63CCF3DA28FE7D1F00E59028 /* PickerLabel.swift in Sources */,
+				63CCF3D628FE78CA00E59028 /* UITableView+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +534,7 @@
 		};
 		63D7730128E9725B003CF91A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916503352B2E92D96931F7E5 /* Pods-PracticeReturnJob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +563,7 @@
 		};
 		63D7730228E9725B003CF91A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D80883DC4F2022371851E34 /* Pods-PracticeReturnJob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

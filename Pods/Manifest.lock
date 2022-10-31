@@ -1,0 +1,54 @@
+PODS:
+  - Differentiator (5.0.0)
+  - Instantiate (4.0.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - Swinject (2.7.1)
+  - SwinjectStoryboard (2.2.2):
+    - Swinject (~> 2.7.1)
+
+DEPENDENCIES:
+  - Instantiate
+  - RxDataSources
+  - RxGesture
+  - RxSwift
+  - Swinject
+  - SwinjectStoryboard
+
+SPEC REPOS:
+  trunk:
+    - Differentiator
+    - Instantiate
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - Swinject
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectStoryboard: 240ce371396da09a4c43c72ee5c148108500e184
+
+PODFILE CHECKSUM: a793849ee109f4c3e5dccfbc19957488c9c60177
+
+COCOAPODS: 1.11.3

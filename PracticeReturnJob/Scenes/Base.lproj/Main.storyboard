@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ca-96-HWt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="rja-dH-UH3">
+            <objects>
+                <viewController id="clX-xa-uuU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iDE-qt-b2X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Nr4-uX-KXD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="baseline_search_black_24pt" id="p8N-5h-iJe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYC-8e-KUx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="931"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="OGb-Hn-g3J">
+            <objects>
+                <viewController id="E3R-c2-VOT" customClass="HomeNavigationViewController" customModule="PracticeReturnJob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WbP-mh-tDZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nnA-J4-FeT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="baseline_home_black_24pt" id="HPP-dU-2qo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxf-d8-Vn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="931"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="S7V-Td-7mC">
+            <objects>
+                <tabBarController id="4ca-96-HWt" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3tY-ee-RHg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="E3R-c2-VOT" kind="relationship" relationship="viewControllers" id="psb-vO-oXW"/>
+                        <segue destination="clX-xa-uuU" kind="relationship" relationship="viewControllers" id="5rH-3l-JLB"/>
+                        <segue destination="Qib-E1-F8f" kind="relationship" relationship="viewControllers" id="K06-QF-Z09"/>
+                        <segue destination="m7h-ZW-fMF" kind="relationship" relationship="viewControllers" id="Q4i-2T-QZb"/>
+                        <segue destination="dbf-xv-d0C" kind="relationship" relationship="viewControllers" id="sWp-wj-PJv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NK0-5n-veF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="70"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="2he-sA-nzG">
+            <objects>
+                <viewController id="Qib-E1-F8f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="giW-Dy-hxE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wPg-3A-l7T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add" image="baseline_add_box_black_24pt" id="IHy-W8-Qik"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2v-gz-dOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="931"/>
+        </scene>
+        <!--Notify-->
+        <scene sceneID="f7N-vr-O8x">
+            <objects>
+                <viewController id="m7h-ZW-fMF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbe-Rm-8F5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ehh-Xe-UvZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notify" image="baseline_notifications_black_24pt" id="iUA-HM-lbA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aH-pr-k28" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="931"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="1b5-RU-7n1">
+            <objects>
+                <viewController id="dbf-xv-d0C" customClass="SettingNavigationViewController" customModule="PracticeReturnJob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="33W-GX-M7O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MQe-Y2-yll"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="baseline_settings_black_24pt" id="ISq-cg-qN1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnf-Fn-ZqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2528" y="931"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseline_add_box_black_24pt" width="24" height="24"/>
+        <image name="baseline_home_black_24pt" width="24" height="24"/>
+        <image name="baseline_notifications_black_24pt" width="24" height="24"/>
+        <image name="baseline_search_black_24pt" width="24" height="24"/>
+        <image name="baseline_settings_black_24pt" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
