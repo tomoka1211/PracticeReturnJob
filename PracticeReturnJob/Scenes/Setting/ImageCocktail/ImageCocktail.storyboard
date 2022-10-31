@@ -8,16 +8,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!-- ImageCocktail Controller-->
+        <!--Image Cocktail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="ImageCocktailViewController" id="Y6W-OH-hqX" customClass="ImageCocktailViewController" customModule="PracticeReturnJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mikan_koko" translatesAutoresizingMaskIntoConstraints="NO" id="2F6-DY-BYf">
+                                <rect key="frame" x="16" y="60" width="382" height="786"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2F6-DY-BYf" secondAttribute="trailing" constant="16" id="18J-8v-1PP"/>
+                            <constraint firstItem="2F6-DY-BYf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="2ag-8q-Jry"/>
+                            <constraint firstItem="2F6-DY-BYf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="IYL-Kg-BXX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2F6-DY-BYf" secondAttribute="bottom" constant="16" id="R4b-qb-K98"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="2F6-DY-BYf" id="rQb-Sx-MeE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,6 +39,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mikan_koko" width="800" height="925"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

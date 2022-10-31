@@ -13,10 +13,11 @@ import RxSwift
 final class ImageCocktailViewController: UIViewController, StoryboardInstantiable {
     
     // MARK: - Outlet
+    @IBOutlet weak var imageView: UIImageView!
     
     // MARK: - Property
-
-    weak var delegate: ImageCocktailDelegate?
+    
+    var delegate: ImageCocktailDelegate?
     var viewModel: ImageCocktailViewModelType!
     private var disposeBag = DisposeBag()
     
@@ -27,23 +28,28 @@ final class ImageCocktailViewController: UIViewController, StoryboardInstantiabl
         vc.viewModel = ImageCocktailViewModel()
         return vc
     }
-
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setLayout()
         setBind()
     }
     
     // MARK: - Private
-
+    
     private func setLayout() {
-
+        navigationItem.title = "画像カクテル"
     }
-
+    
     private func setBind() {
-
+        imageView.rx
+            .tapGesture()
+            .when(.recognized)
+            .subscribe(onNext: { [unowned self] _ in
+                self.delegate?.transitionNext(imageName: "mikan_koko")
+            }).disposed(by: disposeBag)
     }
 }

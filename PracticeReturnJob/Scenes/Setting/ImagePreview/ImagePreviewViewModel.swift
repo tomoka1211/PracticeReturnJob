@@ -16,7 +16,7 @@ protocol ImagePreviewViewModelInput {
 }
 
 protocol ImagePreviewViewModelOutput {
-    
+    var previewImageName: Driver<String> { get }
 }
 
 protocol ImagePreviewViewModelType {
@@ -29,6 +29,7 @@ final class ImagePreviewViewModel: ImagePreviewViewModelInput, ImagePreviewViewM
     // MARK: - Input
 
     // MARK: - Output
+    var previewImageName: Driver<String>
 
     // MARK: - Property
     
@@ -39,6 +40,7 @@ final class ImagePreviewViewModel: ImagePreviewViewModelInput, ImagePreviewViewM
 
     // MARK: - Initialize
     
-    public init() {}
-
+    public init(imageName: String) {
+        previewImageName = BehaviorRelay(value: imageName).asDriver()
+    }
 }

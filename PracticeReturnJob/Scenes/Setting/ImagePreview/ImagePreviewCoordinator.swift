@@ -20,25 +20,26 @@ final class ImagePreviewCoordinator: ImagePreviewDelegate {
     var viewController: ImagePreviewViewController!
     var navigator: UINavigationController!
     var parent: UIViewController
+    var imageName: String!
     
     // MARK: - Initialize
     
-    init(parent: UIViewController) {
+    init(parent: UIViewController, imageName: String) {
         self.parent = parent
+        self.imageName = imageName
     }
 
     // MARK: - Public
     
     func start() {
-        viewController = ImagePreviewViewController.configureWith()
+        viewController = ImagePreviewViewController.configureWith(imageName: imageName)
         viewController.delegate = self
-        navigator = UINavigationController(rootViewController: viewController)
-
-        navigator.modalPresentationStyle = .formSheet
-        parent.present(navigator, animated: true)
+        viewController.modalPresentationStyle = .overCurrentContext
+        
+        parent.present(viewController, animated: true)
     }
     
     func dismiss() {
-        navigator.dismiss(animated: true)
+        viewController.dismiss(animated: true)
     }
 }
