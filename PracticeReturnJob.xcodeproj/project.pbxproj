@@ -10,7 +10,6 @@
 		63CCF3CC28FE658100E59028 /* InputCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3CB28FE658100E59028 /* InputCatalogViewController.swift */; };
 		63CCF3CE28FE658C00E59028 /* InputCatalog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CCF3CD28FE658C00E59028 /* InputCatalog.storyboard */; };
 		63CCF3D028FE6CAD00E59028 /* InputCatalogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3CF28FE6CAD00E59028 /* InputCatalogCoordinator.swift */; };
-		63CCF3D228FE745300E59028 /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3D128FE745300E59028 /* Storyboard+.swift */; };
 		63CCF3D428FE754700E59028 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3D328FE754700E59028 /* StoryboardIdentifiable.swift */; };
 		63CCF3D628FE78CA00E59028 /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */; };
 		63CCF3DA28FE7D1F00E59028 /* PickerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3D928FE7D1F00E59028 /* PickerLabel.swift */; };
@@ -22,7 +21,6 @@
 		63CCF3E928FE8E3400E59028 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF3E828FE8E3400E59028 /* UIView+Rx.swift */; };
 		63D772F028E97259003CF91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D772EF28E97259003CF91A /* AppDelegate.swift */; };
 		63D772F228E97259003CF91A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D772F128E97259003CF91A /* SceneDelegate.swift */; };
-		63D772F428E97259003CF91A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D772F328E97259003CF91A /* ViewController.swift */; };
 		63D772F728E97259003CF91A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D772F528E97259003CF91A /* Main.storyboard */; };
 		63D772FC28E9725B003CF91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D772FA28E9725B003CF91A /* LaunchScreen.storyboard */; };
 		63D7730E28E999A2003CF91A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7730D28E999A2003CF91A /* HomeViewController.swift */; };
@@ -49,7 +47,6 @@
 		63CCF3CB28FE658100E59028 /* InputCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCatalogViewController.swift; sourceTree = "<group>"; };
 		63CCF3CD28FE658C00E59028 /* InputCatalog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputCatalog.storyboard; sourceTree = "<group>"; };
 		63CCF3CF28FE6CAD00E59028 /* InputCatalogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCatalogCoordinator.swift; sourceTree = "<group>"; };
-		63CCF3D128FE745300E59028 /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
 		63CCF3D328FE754700E59028 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
 		63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Rx.swift"; sourceTree = "<group>"; };
 		63CCF3D928FE7D1F00E59028 /* PickerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PickerLabel.swift; path = ../../../../../../Desktop/PickerLabel.swift; sourceTree = "<group>"; };
@@ -62,7 +59,6 @@
 		63D772EC28E97259003CF91A /* PracticeReturnJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeReturnJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D772EF28E97259003CF91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D772F128E97259003CF91A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63D772F328E97259003CF91A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63D772F628E97259003CF91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63D772FB28E9725B003CF91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D772FD28E9725B003CF91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +161,7 @@
 		63CCF3E728FE8E2600E59028 /* Rx */ = {
 			isa = PBXGroup;
 			children = (
+				63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */,
 				63CCF3E828FE8E3400E59028 /* UIView+Rx.swift */,
 			);
 			path = Rx;
@@ -198,8 +195,6 @@
 				63CCF3DD28FE805800E59028 /* Model */,
 				63D772EF28E97259003CF91A /* AppDelegate.swift */,
 				63D772F128E97259003CF91A /* SceneDelegate.swift */,
-				63D772F328E97259003CF91A /* ViewController.swift */,
-				63D772FA28E9725B003CF91A /* LaunchScreen.storyboard */,
 				63D772FD28E9725B003CF91A /* Info.plist */,
 			);
 			path = PracticeReturnJob;
@@ -208,9 +203,10 @@
 		63D7730328E97311003CF91A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				63FADA48290FDD0E00B3854C /* LaunchScreen */,
+				63FADA45290FDCA400B3854C /* Main */,
 				63D7731B28E9AC3A003CF91A /* Setting */,
 				63D7730628E9966E003CF91A /* Home */,
-				63D772F528E97259003CF91A /* Main.storyboard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -229,9 +225,7 @@
 				63CCF3E728FE8E2600E59028 /* Rx */,
 				63D7731728E9A1C6003CF91A /* NSObject+.swift */,
 				63D7732728E9B6A3003CF91A /* UITableView+.swift */,
-				63CCF3D128FE745300E59028 /* Storyboard+.swift */,
 				63CCF3D328FE754700E59028 /* StoryboardIdentifiable.swift */,
-				63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */,
 				63CCF3DB28FE7DDC00E59028 /* UIView+.swift */,
 				63FADA3B290FD5F300B3854C /* StoryboardInstantiable.swift */,
 			);
@@ -251,15 +245,47 @@
 		63D7731B28E9AC3A003CF91A /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				63FADA46290FDCB700B3854C /* Setting */,
 				63AD6788290FBFAB00FDC63F /* ImagePreview */,
 				63CCF3CA28FE654100E59028 /* InputCatalog */,
-				63D7731D28E9AC63003CF91A /* SettingNavigationViewController.swift */,
-				63D7731F28E9AC7B003CF91A /* Setting.storyboard */,
-				63D7732128E9AC91003CF91A /* SettingViewController.swift */,
-				63D7732328E9AF7B003CF91A /* SettingViewSection.swift */,
-				63D7732528E9B297003CF91A /* SettingTableViewCell.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		63FADA45290FDCA400B3854C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				63D772F528E97259003CF91A /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		63FADA46290FDCB700B3854C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				63FADA47290FDCC700B3854C /* Component */,
+				63D7731F28E9AC7B003CF91A /* Setting.storyboard */,
+				63D7732128E9AC91003CF91A /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		63FADA47290FDCC700B3854C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				63D7732328E9AF7B003CF91A /* SettingViewSection.swift */,
+				63D7732528E9B297003CF91A /* SettingTableViewCell.swift */,
+				63D7731D28E9AC63003CF91A /* SettingNavigationViewController.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		63FADA48290FDD0E00B3854C /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				63D772FA28E9725B003CF91A /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		98504277736BF0EB1DADE298 /* Pods */ = {
@@ -393,14 +419,12 @@
 			files = (
 				63D7732628E9B297003CF91A /* SettingTableViewCell.swift in Sources */,
 				63FADA41290FD98700B3854C /* ImagePreviewCoordinator.swift in Sources */,
-				63D772F428E97259003CF91A /* ViewController.swift in Sources */,
 				63D772F028E97259003CF91A /* AppDelegate.swift in Sources */,
 				63CCF3D028FE6CAD00E59028 /* InputCatalogCoordinator.swift in Sources */,
 				63D7731428E9A063003CF91A /* HomeNavigationViewController.swift in Sources */,
 				63CCF3DF28FE806B00E59028 /* CatType.swift in Sources */,
 				63CCF3CC28FE658100E59028 /* InputCatalogViewController.swift in Sources */,
 				63D7731828E9A1C6003CF91A /* NSObject+.swift in Sources */,
-				63CCF3D228FE745300E59028 /* Storyboard+.swift in Sources */,
 				63CCF3E128FE84E400E59028 /* IBDesignableView.swift in Sources */,
 				63FADA3C290FD5F300B3854C /* StoryboardInstantiable.swift in Sources */,
 				63CCF3D428FE754700E59028 /* StoryboardIdentifiable.swift in Sources */,

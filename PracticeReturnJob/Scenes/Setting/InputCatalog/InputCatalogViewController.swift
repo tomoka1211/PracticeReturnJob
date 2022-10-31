@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 
-final class InputCatalogViewController: UIViewController {
+final class InputCatalogViewController: UIViewController, StoryboardInstantiable {
     
     // MARK: - IBOutlet
     
@@ -33,8 +33,7 @@ final class InputCatalogViewController: UIViewController {
     // MARK: - Public
     
     static func configureWith() -> InputCatalogViewController {
-        let vc = Storyboard.InputCatalog.instantiate(InputCatalogViewController.self)
-        //vc.viewModel = InputCatalogViewController(info: info)
+        let vc = InputCatalogViewController.instantiate()
         return vc
     }
     
@@ -48,9 +47,6 @@ final class InputCatalogViewController: UIViewController {
     }
     
     private func setBind() {
-//        pickerView.rx.selectedItem
-//            .sub
-        
         pickerView.selectedItem.subscribe(onNext: { [unowned self] index in
             selectedLabel.text = CatType.allCases[index].rawValue
         })
