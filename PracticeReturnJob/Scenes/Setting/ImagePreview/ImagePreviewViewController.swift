@@ -21,8 +21,9 @@ final class ImagePreviewViewController: UIViewController, StoryboardInstantiable
 
     var delegate: ImagePreviewDelegate?
     var viewModel: ImagePreviewViewModelType!
-    var imageView = UIImageView(frame: UIScreen.main.bounds)
+    private let imageView = UIImageView(frame: UIScreen.main.bounds)
     private var disposeBag = DisposeBag()
+    private let doubleTapGesture = UITapGestureRecognizer()
     
     // MARK: - Public
     
@@ -54,6 +55,9 @@ final class ImagePreviewViewController: UIViewController, StoryboardInstantiable
         imageView.contentMode = .scaleAspectFit
         scrollView.addSubview(imageView)
         
+        // タップ回数判定
+        doubleTapGesture.numberOfTapsRequired = 2
+        
         dismissButton.setImage(UIImage(named: "cancel-cancel_symbol"), for: .normal)
     }
 
@@ -64,9 +68,6 @@ final class ImagePreviewViewController: UIViewController, StoryboardInstantiable
                 self.imageView.image = image
             })
             .disposed(by: disposeBag)
-        
-        let doubleTapGesture = UITapGestureRecognizer()
-        doubleTapGesture.numberOfTapsRequired = 2
         
         scrollView.rx
             .gesture(doubleTapGesture)
