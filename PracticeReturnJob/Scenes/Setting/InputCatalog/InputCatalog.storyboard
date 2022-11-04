@@ -20,29 +20,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ugc-SH-ZI1">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="428"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VO0-Y7-ZP7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfI-sS-KxC" customClass="PickerLabel" customModule="PracticeReturnJob" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="16" width="382" height="80"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="80" id="Vlh-pT-PnV"/>
-                                                        </constraints>
-                                                    </view>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="GfI-sS-KxC" secondAttribute="trailing" constant="16" id="VtX-jn-wim"/>
-                                                    <constraint firstItem="GfI-sS-KxC" firstAttribute="leading" secondItem="VO0-Y7-ZP7" secondAttribute="leading" constant="16" id="lu6-5c-E8Z"/>
-                                                    <constraint firstItem="GfI-sS-KxC" firstAttribute="top" secondItem="VO0-Y7-ZP7" secondAttribute="top" constant="16" id="wlT-mo-gNg"/>
-                                                    <constraint firstAttribute="bottom" secondItem="GfI-sS-KxC" secondAttribute="bottom" constant="16" id="x17-hN-QGk"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPK-aY-dSh">
-                                                <rect key="frame" x="0.0" y="112" width="414" height="92"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJo-6n-Jlr" customClass="PickerView" customModule="PracticeReturnJob">
                                                         <rect key="frame" x="16" y="16" width="382" height="60"/>
@@ -61,7 +42,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bct-KP-dIt">
-                                                <rect key="frame" x="0.0" y="204" width="414" height="92"/>
+                                                <rect key="frame" x="0.0" y="92" width="414" height="92"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msm-bk-y3a">
                                                         <rect key="frame" x="16" y="16" width="382" height="60"/>
@@ -76,6 +57,44 @@
                                                     <constraint firstItem="Msm-bk-y3a" firstAttribute="top" secondItem="Bct-KP-dIt" secondAttribute="top" constant="16" id="MO0-0U-Bpo"/>
                                                     <constraint firstItem="Msm-bk-y3a" firstAttribute="leading" secondItem="Bct-KP-dIt" secondAttribute="leading" constant="16" id="PMm-M0-KAV"/>
                                                     <constraint firstAttribute="bottom" secondItem="Msm-bk-y3a" secondAttribute="bottom" constant="16" id="XCy-RZ-NNl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saE-9J-USv" userLabel="PhoneView">
+                                                <rect key="frame" x="0.0" y="184" width="414" height="122"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7WC-X6-clL" customClass="CustomInputView" customModule="PracticeReturnJob" customModuleProvider="target">
+                                                        <rect key="frame" x="30" y="8" width="354" height="106"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="106" id="h4f-Fu-Ynp"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="7WC-X6-clL" secondAttribute="bottom" constant="8" id="XdF-9a-6AH"/>
+                                                    <constraint firstItem="7WC-X6-clL" firstAttribute="leading" secondItem="saE-9J-USv" secondAttribute="leading" constant="30" id="b0h-xi-LHJ"/>
+                                                    <constraint firstItem="7WC-X6-clL" firstAttribute="top" secondItem="saE-9J-USv" secondAttribute="top" constant="8" id="n0C-4h-ftd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7WC-X6-clL" secondAttribute="trailing" constant="30" id="tyX-xy-PLH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGn-Jn-4JY" userLabel="EmailView">
+                                                <rect key="frame" x="0.0" y="306" width="414" height="122"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdD-Bz-gwo" customClass="CustomInputView" customModule="PracticeReturnJob" customModuleProvider="target">
+                                                        <rect key="frame" x="30" y="8" width="354" height="106"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="106" id="yJO-N4-n7s"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="wdD-Bz-gwo" firstAttribute="leading" secondItem="lGn-Jn-4JY" secondAttribute="leading" constant="30" id="6Y4-L5-I7e"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wdD-Bz-gwo" secondAttribute="bottom" constant="8" id="pZd-Mf-2CX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wdD-Bz-gwo" secondAttribute="trailing" constant="30" id="vNl-50-h7P"/>
+                                                    <constraint firstItem="wdD-Bz-gwo" firstAttribute="top" secondItem="lGn-Jn-4JY" secondAttribute="top" constant="8" id="w91-AD-H2d"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -101,7 +120,8 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="pickerLabel" destination="GfI-sS-KxC" id="4AM-Wc-1NY"/>
+                        <outlet property="emailInputView" destination="wdD-Bz-gwo" id="nhd-gY-hhY"/>
+                        <outlet property="phoneInputView" destination="7WC-X6-clL" id="9fu-3d-5Cf"/>
                         <outlet property="pickerView" destination="mJo-6n-Jlr" id="Xpv-mk-WIA"/>
                         <outlet property="selectedLabel" destination="Msm-bk-y3a" id="jGx-vp-cj3"/>
                     </connections>

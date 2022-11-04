@@ -59,7 +59,8 @@ final class PickerView: UIView {
     }
     
     private func setLayout() {
-        self.setCornersRadius(radius: 3, roundingCorners: [.topLeft, .topRight, .bottomRight, .bottomLeft])
+        self.layer.cornerRadius = 3
+        self.clipsToBounds = true
         self.borders(for: [.all], width: 1, color: UIColor.gray)
         
         coverView.rx.tapGes

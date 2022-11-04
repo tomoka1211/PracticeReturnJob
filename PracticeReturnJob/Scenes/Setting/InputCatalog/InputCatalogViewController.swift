@@ -12,9 +12,10 @@ final class InputCatalogViewController: UIViewController, StoryboardInstantiable
     
     // MARK: - IBOutlet
     
-    @IBOutlet private weak var pickerLabel: PickerLabel!
     @IBOutlet private weak var pickerView: PickerView!
     @IBOutlet private weak var selectedLabel: UILabel!
+    @IBOutlet private weak var phoneInputView: CustomInputView!
+    @IBOutlet private weak var emailInputView: CustomInputView!
     
     // MARK: - Property
     
@@ -42,8 +43,17 @@ final class InputCatalogViewController: UIViewController, StoryboardInstantiable
     private func setLayout() {
         navigationItem.title = "入力フォームのカタログ"
         
-        pickerLabel.data = catType.map { ($0.rawValue, $0.id) }
         pickerView.data = catType.map { ($0.rawValue, $0.id) }
+        
+        phoneInputView.title = "電話番号"
+        phoneInputView.keyboardType = .numberPad
+        phoneInputView.placeHolder = "電話番号を入力してください"
+        phoneInputView.isRequired = true
+        
+        emailInputView.title = "メールアドレス"
+        emailInputView.keyboardType = .emailAddress
+        emailInputView.placeHolder = "メールアドレスを入力してください"
+        emailInputView.isRequired = false
     }
     
     private func setBind() {
@@ -51,5 +61,17 @@ final class InputCatalogViewController: UIViewController, StoryboardInstantiable
             selectedLabel.text = CatType.allCases[index].rawValue
         })
         .disposed(by: disposeBag)
+        
+        phoneInputView.textField.rx.text.orEmpty
+            .debounce(.microseconds(500), scheduler: MainScheduler.instance)
+            .map { PracticeReturnJob.validate(input: $0, type: .phone) }
+            .bind(to: phoneInputView.rx.validationResult)
+            .disposed(by: disposeBag)
+        
+        emailInputView.textField.rx.text.orEmpty
+                    .debounce(.microseconds(500), scheduler: MainScheduler.instance)
+                    .map { PracticeReturnJob.validate(input: $0, type: .email) }
+                    .bind(to: emailInputView.rx.validationResult)
+                    .disposed(by: disposeBag)
     }
 }
