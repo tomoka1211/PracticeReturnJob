@@ -56,7 +56,7 @@
 		63CCF3CF28FE6CAD00E59028 /* InputCatalogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCatalogCoordinator.swift; sourceTree = "<group>"; };
 		63CCF3D328FE754700E59028 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
 		63CCF3D528FE78CA00E59028 /* UITableView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Rx.swift"; sourceTree = "<group>"; };
-		63CCF3D928FE7D1F00E59028 /* PickerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PickerLabel.swift; path = ../../../../../../Desktop/PickerLabel.swift; sourceTree = "<group>"; };
+		63CCF3D928FE7D1F00E59028 /* PickerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerLabel.swift; sourceTree = "<group>"; };
 		63CCF3DB28FE7DDC00E59028 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		63CCF3DE28FE806B00E59028 /* CatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatType.swift; sourceTree = "<group>"; };
 		63CCF3E028FE84E400E59028 /* IBDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableView.swift; sourceTree = "<group>"; };
