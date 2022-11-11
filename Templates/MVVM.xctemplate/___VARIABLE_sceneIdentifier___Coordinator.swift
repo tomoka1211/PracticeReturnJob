@@ -19,12 +19,12 @@ final class ___VARIABLE_sceneIdentifier___Coordinator: ___VARIABLE_sceneIdentifi
     
     var viewController: ___VARIABLE_sceneIdentifier___ViewController!
     var navigator: UINavigationController!
-    var parent: UIViewController
+    let either: Either<UIViewController, UINavigationController>
     
     // MARK: - Initialize
     
-    init(parent: UIViewController) {
-        self.parent = parent
+    init(either: Either<UIViewController, UINavigationController>) {
+        self.either = either
     }
 
     // MARK: - Public
@@ -32,10 +32,17 @@ final class ___VARIABLE_sceneIdentifier___Coordinator: ___VARIABLE_sceneIdentifi
     func start() {
         viewController = ___VARIABLE_sceneIdentifier___ViewController.configureWith()
         viewController.delegate = self
-        navigator = UINavigationController(rootViewController: viewController)
-
-        navigator.modalPresentationStyle = .formSheet
-        parent.present(navigator, animated: true)
+        switch either {
+        case .left(let parent):
+            // モーダル遷移
+            navigator = UINavigationController(rootViewController: viewController)
+            navigator.modalPresentationStyle = .formSheet
+            parent.present(navigator, animated: true)
+        case .right(let navigationController):
+            // プッシュ遷移
+            navigator = navigationController
+            navigator.pushViewController(viewController, animated: true)
+        }
     }
     
     func dismiss() {

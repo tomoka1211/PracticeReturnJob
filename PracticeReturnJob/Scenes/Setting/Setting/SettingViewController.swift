@@ -50,7 +50,8 @@ final class SettingViewController: UIViewController, StoryboardInstantiable {
             .subscribe(onNext: { [unowned self] transition in
                 switch transition {
                 case .inputCatalog:
-                    let coordinator = InputCatalogCoordinator(parent: self)
+                    // modal
+                    let coordinator = InputCatalogCoordinator(either: .left(self))
                     coordinator.start()
                 case .imagePreview:
                     let coordinator = ImageCocktailCoordinator(parent: self)

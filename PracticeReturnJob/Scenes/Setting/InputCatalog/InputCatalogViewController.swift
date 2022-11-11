@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 final class InputCatalogViewController: UIViewController, StoryboardInstantiable {
     
@@ -69,9 +70,9 @@ final class InputCatalogViewController: UIViewController, StoryboardInstantiable
             .disposed(by: disposeBag)
         
         emailInputView.textField.rx.text.orEmpty
-                    .debounce(.microseconds(500), scheduler: MainScheduler.instance)
-                    .map { PracticeReturnJob.validate(input: $0, type: .email) }
-                    .bind(to: emailInputView.rx.validationResult)
-                    .disposed(by: disposeBag)
+            .debounce(.microseconds(500), scheduler: MainScheduler.instance)
+            .map { PracticeReturnJob.validate(input: $0, type: .email) }
+            .bind(to: emailInputView.rx.validationResult)
+            .disposed(by: disposeBag)
     }
 }

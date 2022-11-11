@@ -18,31 +18,40 @@ final class InputCatalogCoordinator: InputCatalogDelegate {
     // MARK: - Property
     
     var viewController: InputCatalogViewController!
-    var selfNavigator: UINavigationController!
-    var parent: UIViewController
+    var navigator: UINavigationController!
+    let either: Either<UIViewController, UINavigationController>
     
     // MARK: - Initialize
     
-
-    
-    init(parent: UIViewController) {
-        self.parent = parent
+    init(either: Either<UIViewController, UINavigationController>) {
+        self.either = either
     }
     
     func start() {
         viewController = InputCatalogViewController.configureWith()
         viewController.delegate = self
-        selfNavigator = UINavigationController(rootViewController: viewController)
-
-        selfNavigator.modalPresentationStyle = .formSheet
-        parent.present(selfNavigator, animated: true)
+        switch either {
+        case .left(let parent):
+            // モーダル遷移
+            navigator = UINavigationController(rootViewController: viewController)
+            navigator.modalPresentationStyle = .formSheet
+            parent.present(navigator, animated: true)
+        case .right(let navigationController):
+            // プッシュ遷移
+            navigator = navigationController
+            navigator.pushViewController(viewController, animated: true)
+        }
     }
     
     func dismiss() {
-        selfNavigator.dismiss(animated: true)
+        navigator.dismiss(animated: true)
     }
     
     func complete() {
         print("complete")
     }
+}
+
+enum Either<L, R> {
+    case left(L), right(R)
 }
